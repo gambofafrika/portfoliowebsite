@@ -1,0 +1,9 @@
+import {test,expect} from 'vitest';import {render,screen} from '@testing-library/react';import userEvent from '@testing-library/user-event';import {MemoryRouter} from 'react-router-dom';import {HelmetProvider} from 'react-helmet-async';import App from './App';
+const view=(path='/')=>render(<HelmetProvider><MemoryRouter initialEntries={[path]}><App/></MemoryRouter></HelmetProvider>);
+test('mobile navigation toggles',async()=>{view();const b=screen.getByRole('button',{name:/menu/i});expect(b).toHaveAttribute('aria-expanded','false');await userEvent.click(b);expect(b).toHaveAttribute('aria-expanded','true')});
+test('workflow filtering works',async()=>{view('/workflows');await userEvent.click(screen.getByRole('button',{name:'Customer Support'}));expect(screen.getByText('AI Customer Support Assistant')).toBeInTheDocument();expect(screen.queryByText('Automated Business Reporting')).not.toBeInTheDocument()});
+test('faq accordion works',async()=>{view();const q=screen.getByRole('button',{name:/Do I need to replace/});await userEvent.click(q);expect(screen.getByText(/Usually not/)).toBeInTheDocument()});
+test('contact validation works',async()=>{view('/contact');await userEvent.click(screen.getByRole('button',{name:/Request a free consultation/}));expect(screen.getAllByText('This field is required.').length).toBeGreaterThan(0)});
+test('project page renders from data',()=>{view('/workflows/ai-lead-qualification');expect(screen.getByRole('heading',{name:'AI Lead Qualification & Follow-Up',level:1})).toBeInTheDocument()});
+test('missing project shows useful 404',()=>{view('/workflows/missing');expect(screen.getByText(/could not be found/i)).toBeInTheDocument()});
+test('missing video has professional fallback',()=>{view('/workflows/ai-customer-support');expect(screen.getByText('Automation demo coming soon')).toBeInTheDocument()});
