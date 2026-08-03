@@ -1,4 +1,4 @@
-# Taiwo Oloni — AI Automation Portfolio
+# Automa8 Portfolio — Taiwo Oloni
 
 A production-ready React portfolio focused on the business value of AI automation. It includes responsive pages, six detailed services, filterable workflow case studies, deferred video support, accessible galleries, FAQs, a real Netlify consultation form, privacy and thank-you pages, structured SEO data, and automated tests.
 
@@ -63,7 +63,7 @@ Replace every placeholder in the `profile` object in `src/data.ts`, including em
 
 ## SEO
 
-`VITE_SITE_URL`, `public/sitemap.xml`, and `public/robots.txt` are configured for `https://taiwo-oloni-automation.netlify.app`. Update all three if a custom domain is connected. Page metadata and JSON-LD are managed by the `SEO` component in `src/App.tsx`. Add a real social preview image and `og:image` metadata before a public campaign.
+`VITE_SITE_URL`, `public/sitemap.xml`, and `public/robots.txt` are configured for `https://automa8-portfolio.netlify.app`. Update all three if a custom domain is connected. Page metadata and JSON-LD are managed by the `SEO` component in `src/App.tsx`. Add a real social preview image and `og:image` metadata before a public campaign.
 
 ## Netlify deployment
 
