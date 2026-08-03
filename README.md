@@ -2,6 +2,20 @@
 
 A production-ready React portfolio focused on the business value of AI automation. It includes responsive pages, six detailed services, filterable workflow case studies, deferred video support, accessible galleries, FAQs, a real Netlify consultation form, privacy and thank-you pages, structured SEO data, and automated tests.
 
+## Open Design redesign variant
+
+This design was developed as a separate comparison build and selected for production on 2026-08-03. The earlier blue-and-teal version remains recoverable through Git history and the local `original-design` branch. This variant uses an evidence-backed direction synthesized with Open Design Intelligence from Mastercard, IBM, and Vodafone references: a warm editorial canvas, engineered grid, flat hairline surfaces, minimal corner radius, one decisive coral accent, and diagrammatic automation cues. It adapts general design decisions only and does not copy brand assets or proprietary motifs.
+
+Run each folder on a different local port to compare them side by side:
+
+```bash
+# Current deployed design
+npm run dev -- --port 4173
+
+# Open Design redesign
+npm run dev -- --port 4174
+```
+
 ## Technology
 
 React, Vite, TypeScript, React Router, Lucide icons, CSS, Vitest, Testing Library, ESLint, Prettier, and Netlify Forms. Content is static and strongly typed; no backend or secrets are required.
@@ -49,7 +63,7 @@ Replace every placeholder in the `profile` object in `src/data.ts`, including em
 
 ## SEO
 
-Set `VITE_SITE_URL` in Netlify to the final `https://...netlify.app` or custom domain. Replace placeholder domains in `public/sitemap.xml` and `public/robots.txt`. Page metadata and JSON-LD are managed by the `SEO` component in `src/App.tsx`. Add a real social preview image and `og:image` metadata before a public campaign.
+`VITE_SITE_URL`, `public/sitemap.xml`, and `public/robots.txt` are configured for `https://taiwo-oloni-automation.netlify.app`. Update all three if a custom domain is connected. Page metadata and JSON-LD are managed by the `SEO` component in `src/App.tsx`. Add a real social preview image and `og:image` metadata before a public campaign.
 
 ## Netlify deployment
 
@@ -74,7 +88,6 @@ Edit `/privacy` copy in `src/App.tsx` to match actual retention, service provide
 
 - Taiwo's professional portrait and accurate alt text
 - Real email, phone/WhatsApp, LinkedIn, GitHub, and booking URL
-- Final Netlify or custom domain in environment, sitemap, and robots file
 - Real n8n/Zapier workflow screenshots and captions
 - Demo video URLs or local MP4 files
 - Real project context, scope, and only verified results

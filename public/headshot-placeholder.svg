@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760"><rect width="640" height="760" fill="#dfe9ef"/><circle cx="320" cy="255" r="120" fill="#7a96a8"/><path d="M110 720c25-205 130-310 210-310s185 105 210 310" fill="#41657b"/><text x="320" y="90" text-anchor="middle" font-family="Arial" font-size="24" fill="#17384b">Replace with Taiwo's portrait</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-labelledby="title desc">
+  <title id="title">Taiwo Oloni monogram</title>
+  <desc id="desc">An abstract editorial graphic with the initials TO and connected automation nodes.</desc>
+  <rect width="640" height="760" fill="#171a17"/>
+  <g stroke="#3d423d" stroke-width="1">
+    <path d="M0 80h640M0 160h640M0 240h640M0 320h640M0 400h640M0 480h640M0 560h640M0 640h640M0 720h640"/>
+    <path d="M80 0v760M160 0v760M240 0v760M320 0v760M400 0v760M480 0v760M560 0v760"/>
+  </g>
+  <path d="M104 132h256v76h-82v280h-88V208h-86z" fill="#f3f0e8"/>
+  <circle cx="424" cy="344" r="112" fill="none" stroke="#ff6038" stroke-width="72"/>
+  <path d="M112 604h124M236 604l72-56M308 548h116M424 548l94 72" fill="none" stroke="#d8ff4f" stroke-width="4" stroke-dasharray="10 9"/>
+  <g fill="#fffdf7" stroke="#171a17" stroke-width="4"><rect x="82" y="574" width="60" height="60"/><rect x="278" y="518" width="60" height="60"/><rect x="488" y="590" width="60" height="60"/></g>
+  <g fill="#ff6038"><rect x="100" y="592" width="24" height="24"/><rect x="296" y="536" width="24" height="24"/><rect x="506" y="608" width="24" height="24"/></g>
+  <text x="80" y="708" fill="#f3f0e8" font-family="Arial, sans-serif" font-size="20" letter-spacing="5">AUTOMATION SYSTEMS</text>
+</svg>
