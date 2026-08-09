@@ -1,6 +1,6 @@
 # Automa8 Portfolio — Taiwo Oloni
 
-A production-ready React portfolio focused on the business value of AI automation. It includes responsive pages, six detailed services, filterable workflow case studies, deferred video support, accessible galleries, FAQs, a real Netlify consultation form, privacy and thank-you pages, structured SEO data, and automated tests.
+A production-ready React portfolio focused on the business value of AI automation. It includes responsive pages, six detailed services, four verified published n8n workflow case studies, filterable workflow maps, deferred video support, accessible galleries, FAQs, a real Netlify consultation form, privacy and thank-you pages, structured SEO data, and automated tests.
 
 ## Open Design redesign variant
 
@@ -47,11 +47,11 @@ The editable profile, contact placeholders, services, projects, testimonials, an
 
 ### Add or edit a project
 
-Copy a project object in the `projects` array, give it a unique URL-safe `slug`, and update all content. The card and `/workflows/:slug` case-study route are created automatically. Keep the status honest. Any sample or expected results must remain clearly identified as unverified.
+Copy a project object in the `projects` array, give it a unique URL-safe `slug`, and update all content. The card and `/workflows/:slug` case-study route are created automatically. Keep the publication status and `evidence` note honest. Expected operational benefits must remain clearly separated from measured results.
 
 ### Add workflow screenshots
 
-Export an n8n or Zapier canvas as PNG or WebP, optimise it, place it in `public/workflows/`, then set each `images[].src`, `alt`, and `caption` value. The gallery lazy-loads images and opens the full image in a keyboard-accessible browser view. Use descriptive alt text.
+The portfolio generates a responsive workflow map from each project's `preview` steps, so real case studies do not require placeholder screenshots. To add a real n8n canvas image later, export it as PNG or WebP, optimise and redact it, place it in `public/workflows/`, then set each `images[].src`, `alt`, and `caption` value. The gallery lazy-loads images and opens the full image in a keyboard-accessible browser view.
 
 ### Add a video
 
@@ -88,7 +88,7 @@ Edit `/privacy` copy in `src/App.tsx` to match actual retention, service provide
 
 - Taiwo's professional portrait and accurate alt text
 - Real email, phone/WhatsApp, LinkedIn, GitHub, and booking URL
-- Real n8n/Zapier workflow screenshots and captions
+- Optional redacted n8n workflow screenshots and captions
 - Demo video URLs or local MP4 files
 - Real project context, scope, and only verified results
 - Real testimonials only after client approval
