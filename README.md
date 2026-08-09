@@ -51,7 +51,7 @@ Copy a project object in the `projects` array, give it a unique URL-safe `slug`,
 
 ### Add workflow screenshots
 
-The portfolio generates a responsive workflow map from each project's `preview` steps, so real case studies do not require placeholder screenshots. To add a real n8n canvas image later, export it as PNG or WebP, optimise and redact it, place it in `public/workflows/`, then set each `images[].src`, `alt`, and `caption` value. The gallery lazy-loads images and opens the full image in a keyboard-accessible browser view.
+Each published case study includes an authentic n8n canvas capture produced from a credential-free, inactive preview of the real workflow layout. The portfolio also generates a responsive summary map from each project's `preview` steps. To add another canvas image later, export or safely capture it as PNG or WebP, optimise and redact it, place it in `public/workflows/`, then set each `images[].src`, `alt`, and `caption` value. The gallery lazy-loads images and opens the full image in a keyboard-accessible browser view.
 
 ### Add a video
 
@@ -88,7 +88,7 @@ Edit `/privacy` copy in `src/App.tsx` to match actual retention, service provide
 
 - Taiwo's professional portrait and accurate alt text
 - Real email, phone/WhatsApp, LinkedIn, GitHub, and booking URL
-- Optional redacted n8n workflow screenshots and captions
+- Optional additional redacted n8n workflow screenshots and captions
 - Demo video URLs or local MP4 files
 - Real project context, scope, and only verified results
 - Real testimonials only after client approval
