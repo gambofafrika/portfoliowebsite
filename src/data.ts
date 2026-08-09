@@ -1,7 +1,7 @@
 export type VideoType='youtube'|'loom'|'vimeo'|'mp4'|'none';
 export interface Service{title:string;problem:string;solution:string;benefit:string}
 export interface Project{slug:string;title:string;category:string;platform:string;summary:string;problem:string;manual:string;objective:string;steps:string[];preview:string[];tools:string[];impact:string[];status:string;evidence:string;video:{type:VideoType;url?:string};images:{src:string;alt:string;caption:string}[];industry:string;security:string[];lessons:string[]}
-export const profile={name:'Taiwo Oloni',title:'AI Automation Specialist',location:'Ibadan, Nigeria',experience:'2 years',email:'hello@yourdomain.com',phone:'+234 000 000 0000',booking:'#contact',linkedin:'#',github:'#',whatsapp:'#'};
+export const profile={name:'Taiwo Fiyin',title:'AI Automation Specialist',location:'Ibadan, Nigeria',experience:'2 years',email:'hello@yourdomain.com',phone:'+234 000 000 0000',booking:'#contact',linkedin:'#',github:'#',whatsapp:'#'};
 export const services:Service[]=[
  {title:'AI Workflow Automation',problem:'Repetitive operations and scattered data consume valuable team time.',solution:'I connect your tools and automate data movement, notifications, reporting, and approvals.',benefit:'Designed to lower administrative effort and give your team more capacity for valuable work.'},
  {title:'n8n Automation Development',problem:'Complex processes need more flexibility than basic one-step automations.',solution:'I build multi-step workflows with APIs, webhooks, databases, AI agents, and reliable business logic.',benefit:'A maintainable system shaped around how your business actually operates.'},

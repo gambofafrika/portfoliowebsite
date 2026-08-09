@@ -1,4 +1,4 @@
-# Automa8 Portfolio — Taiwo Oloni
+# Automa8 Portfolio — Taiwo Fiyin
 
 A production-ready React portfolio focused on the business value of AI automation. It includes responsive pages, six detailed services, four verified published n8n workflow case studies, filterable workflow maps, deferred video support, accessible galleries, FAQs, a real Netlify consultation form, privacy and thank-you pages, structured SEO data, and automated tests.
 

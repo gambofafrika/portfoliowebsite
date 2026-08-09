@@ -1,4 +1,4 @@
-# Taiwo Oloni Portfolio — Open Design Redesign
+# Taiwo Fiyin Portfolio — Open Design Redesign
 
 ## Intent
 
