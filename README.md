@@ -63,7 +63,18 @@ Replace every placeholder in the `profile` object in `src/data.ts`, including em
 
 ## SEO
 
-`VITE_SITE_URL`, `public/sitemap.xml`, and `public/robots.txt` are configured for `https://automa8-portfolio.netlify.app`. Update all three if a custom domain is connected. Page metadata and JSON-LD are managed by the `SEO` component in `src/App.tsx`. Add a real social preview image and `og:image` metadata before a public campaign.
+The canonical site URL is `https://taiwofiyin.name.ng`. The `SEO` component in `src/App.tsx` uses this default unless `VITE_SITE_URL` overrides it; `.env.example`, `public/sitemap.xml`, and `public/robots.txt` use the same domain. Page metadata and JSON-LD are managed by that component. Keep all four locations aligned when changing domains. Add a real social preview image and `og:image` metadata before a public campaign.
+
+### Custom domain operations
+
+The Netlify project remains **automa8-portfolio**. Its primary domain is `taiwofiyin.name.ng`, and `www.taiwofiyin.name.ng` redirects to the primary domain. QServers is the registrar; Cloudflare manages authoritative DNS using `elisabeth.ns.cloudflare.com` and `simon.ns.cloudflare.com`.
+
+| Host | Type | Target | Proxy |
+| --- | --- | --- | --- |
+| `@` | Flattened CNAME | `apex-loadbalancer.netlify.com` | DNS only |
+| `www` | CNAME | `automa8-portfolio.netlify.app` | DNS only |
+
+Netlify serves the website and provisions its Let's Encrypt certificate. Cloudflare proxying is disabled so Netlify can verify DNS and serve HTTPS directly. After changing DNS, wait for delegation to propagate, use **Verify DNS configuration** in Netlify, and confirm a certificate covers both hostnames. Check the homepage, a direct workflow URL, `/robots.txt`, `/sitemap.xml`, and the `www` redirect over HTTPS before declaring the domain live. No custom-domain mailbox is configured; consultation enquiries continue through Netlify Forms and its existing email notification.
 
 ## Netlify deployment
 
