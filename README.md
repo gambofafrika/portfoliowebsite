@@ -1,6 +1,6 @@
 # Automa8 Portfolio — Taiwo Fiyin
 
-A production-ready React portfolio focused on the business value of AI automation. It includes responsive pages, six detailed services, four verified published n8n workflow case studies, filterable workflow maps, deferred video support, accessible galleries, FAQs, a real Netlify consultation form, privacy and thank-you pages, structured SEO data, and automated tests.
+A production-ready React portfolio focused on the business value of AI automation. It includes responsive pages, six detailed services, five case studies (four published n8n workflows and the TS Car Clinic capstone demo), filterable workflow maps, deferred video support, accessible galleries, FAQs, a real Netlify consultation form, privacy and thank-you pages, structured SEO data, and automated tests.
 
 ## Open Design redesign variant
 
@@ -51,7 +51,13 @@ Copy a project object in the `projects` array, give it a unique URL-safe `slug`,
 
 ### Add workflow screenshots
 
-Each published case study includes an authentic n8n canvas capture produced from a credential-free, inactive preview of the real workflow layout. The portfolio also generates a responsive summary map from each project's `preview` steps. To add another canvas image later, export or safely capture it as PNG or WebP, optimise and redact it, place it in `public/workflows/`, then set each `images[].src`, `alt`, and `caption` value. The gallery lazy-loads images and opens the full image in a keyboard-accessible browser view.
+The four workflow case studies include authentic n8n canvas captures produced from credential-free, inactive previews of the real workflow layouts. The TS Car Clinic case study instead includes authentic deployed dashboard and linked-feedback-form screenshots, reviewed for public use. The portfolio also generates a responsive summary map from each project's `preview` steps. To add another image later, export or safely capture it as PNG or WebP, optimise and redact it, place it in `public/workflows/`, then set each `images[].src`, `alt`, and `caption` value. The gallery lazy-loads images and opens the full image in a keyboard-accessible browser view.
+
+### TS Car Clinic capstone
+
+`/workflows/ts-car-clinic-feedback-automation` is featured first on the homepage and workflow index and is available through the Customer Experience filter. It documents three published n8n workflows, a Google Apps Script operations dashboard, Sheets records, local Ollama/Gemma analysis, event-based completion/approval, history-aware routing, staff ownership, and human-reviewed replies.
+
+Label this project **Capstone · Validated demo**: source release 8.2.0 / website v10 recorded 66 passing packaged checks and live synthetic-flow verification on 2026-10-03. It is not a production rollout or evidence of measured business results. The project-specific `securitySummary` explains deferred roles, signed invitations, delivery durability, calibration, and always-on inference. The two screenshots contain synthetic demo records and no customer contacts, private endpoints, or credentials. Keep the operational dashboard link, editable records, mailbox screenshots, and source package off the public portfolio. Recording remains planned, so no video placeholder or unverified demo link is shown.
 
 ### Add a video
 
